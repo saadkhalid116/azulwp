@@ -1,0 +1,470 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: url('summer-beach-kite-surfing-background.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+/* Navbar Styling */
+.navbar {
+    z-index: 10;
+    position: relative;
+}
+
+.navbar .navbar-logo {
+    height: 50px;
+}
+
+.navbar-dark .nav-link {
+    color: white !important;
+    font-size: 14px;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.navbar .btn-outline-light {
+    border-color: white;
+    color: white;
+    font-size: 0.875rem;
+}
+
+.navbar {
+    color: white;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+
+
+.dropdown-toggle::after {
+    content: none; /* Remove the default Bootstrap arrow */
+}
+
+.dropdown-arrow {
+    width: 11px; /* Adjust size */
+    margin-left: 5px; /* Space between "EN" and the arrow */
+    vertical-align: middle; /* Align with text */
+}
+
+.navbar-toggler {
+    display: block !important; /* Force the button to be visible on all screen sizes */
+    box-shadow: none !important; /* Remove shadow */
+    border: none;
+
+}
+
+
+.navbar .dropdown-menu-dark .dropdown-item {
+    font-size: 0.875rem;
+    color: white;
+}
+
+.navbar .dropdown-menu-dark .dropdown-item:hover {
+    background-color: #555;
+}
+.btn-outline-light-s{
+    background-color: rgba(255, 255, 255, 0.1); /* Maintain transparency */
+    color: white;
+    border-radius: 0px;
+    width: 100px;
+}
+
+.btn-outline-light-s:hover{
+    background-color: rgba(255, 255, 255, 0.3); /* Maintain transparency */
+    color: white;
+    border-radius: 4px;
+    border-radius: 0px;
+
+}
+.btn-outline-light{
+    border-radius: 0px;
+    width: 100px;
+
+}
+
+.btn-outline-light:hover{
+    background-color: rgba(255, 255, 255, 0.3); /* Maintain transparency */
+    color: white;
+    border: 1px solid white; /* Subtle blue border */
+    border-radius: 4px;
+    border-radius: 0px;
+
+}
+
+/* Hero Content */
+
+.hero-section {
+    position: relative; /* Parent container for relative positioning */
+    height: 100vh; /* Full viewport height */
+    background-image: url('summer-beach-kite-surfing-background.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@media (max-width: 500px) {
+    .hero-content {
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+}
+
+
+.hero-content h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #DDDDDD;
+
+}
+
+@font-face {
+    font-family: 'Adobe Caslon Pro';
+    src: url('fonts/AdobeCaslonPro.ttf') format('truetype'); /* Adjust path if needed */
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-family: 'Adobe Caslon Pro', serif;
+}
+
+@media (max-width: 500px) {
+    .hero-content h5 {
+        font-size: 18px;
+        margin-bottom: 0px;
+        color: #DDDDDD;
+    
+    }
+    .hero-content h1 {
+        font-size: 42px;
+        margin-bottom: 0px;
+        font-weight: 200;
+        font-family: 'Adobe Caslon Pro', serif;
+    }
+}
+
+.hero-content p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #DDDDDD;
+
+}
+
+/* Booking Inputs */
+/* Transparent Input Fields */
+/* Transparent Input Fields */
+
+
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
+    border-radius: 0px;
+    height: 45px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+
+.with-icon {
+    background-image: url('checkin.png'); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust position */
+    background-size: 20px 20px; /* Adjust size */
+    padding-left: 40px; /* Add padding to make space for the icon */
+    border: none; /* Removes the border */
+    outline: none; /* Removes focus outline (optional) */
+}
+
+.with-guest {
+    background-image: url('guest.png'); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust position */
+    background-size: 20px 20px; /* Adjust size */
+    padding-left: 40px; /* Add padding to make space for the icon */
+    border: none; /* Removes the border */
+    outline: none; /* Removes focus outline (optional) */
+}
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter text for placeholders */
+}
+
+/* Focus and Active State for Input Fields */
+.form-control:focus,
+.form-control:active {
+    background-color: rgba(255, 255, 255, 0.2); /* Maintain transparency */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.8); /* Highlighted border on focus */
+    outline: none; /* Removes default browser outline */
+}
+
+/* Transparent Button */
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0.2); /* Maintain transparency */
+    color: white;
+    border: 1px solid white; /* Subtle blue border */
+    border-radius: 0px;
+    height: 45px;
+    font-size: 1rem;
+    border: none; /* Removes the border */
+    outline: none; /* Removes focus outline (optional) */
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: rgba(255, 255, 255, 0.2); /* Maintain transparency */
+
+    color: white;
+    border: 0px solid white; /* Subtle blue border */
+    outline: none; /* Removes default browser outline */
+    border: none; /* Removes the border */
+    outline: none; /* Removes focus outline (optional) */
+}
+
+.btn-primary:hover{
+    background-color: rgba(255, 255, 255, 0.3); /* Maintain transparency */
+    color: white;
+    border: 0px solid white; /* Subtle blue border */
+    border-radius: 0px;
+    height: 45px;
+    font-size: 1rem;
+    
+}
+
+
+
+/* General Flatpickr Calendar Styling */
+.flatpickr-calendar {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text for contrast */
+    border: 1px solid #555; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for elevation */
+}
+
+/* Day Buttons */
+.flatpickr-day {
+    color: #fff; /* Default day color */
+    background-color: transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.flatpickr-day:hover {
+    background-color: #555; /* Highlight on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.flatpickr-day.today {
+    color: #fff;
+}
+
+.flatpickr-day.selected {
+    background-color: #555; /* Highlight on hover */
+    color: #fff;
+}
+
+/* Month and Year Navigation */
+.flatpickr-current-month {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+    color: #fff; /* Arrows */
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover,
+.flatpickr-months .flatpickr-next-month:hover {
+    background-color: #555; /* Highlight on hover */
+}
+
+/* Time Selection (if enabled) */
+.flatpickr-time {
+    background-color: #333;
+    color: #fff;
+}
+
+.flatpickr-time input {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.flatpickr-time input:focus {
+    outline: none;
+    box-shadow: 0 0 4px #555;
+}
+
+
+
+/* Section Styling */
+.luxury-escape-section  {
+    position: relative;
+    background-color: #f9f9f9; /* Light background */
+    overflow: hidden;
+}
+
+.background-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Line\ pattern.png'); /* Add your background image here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-color: #EFF2EB;
+}
+
+.luxury-escape-section .container-fluid  {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background lines */
+}
+
+/* Image Section */
+
+
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Maintain transparency */
+
+
+}
+
+.image-overlay span {
+    font-size: 14px;
+}
+
+.image-overlay .btn {
+    font-size: 14px;
+}
+.custom-border-top {
+    border-top: 1px solid rgba(217, 217, 217, 0.1); /* Adjust thickness and color as needed */
+
+}
+
+/* Text Section */
+.section-subtitle {
+    font-size: 18px;
+    color: #51514D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    font-size: 62px;
+    font-weight: normal;
+    color: #664914;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    z-index: 10;
+}
+
+@media (max-width: 1200px) {
+    .section-title {
+        font-size: 52px;
+        font-weight: normal;
+        color: #664914;
+        margin-bottom: 20px;
+        line-height: 0.5;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 32px;
+        font-weight: normal;
+        color: #664914;
+        margin-bottom: 20px;
+        line-height: 0.5;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 62px;
+        font-weight: normal;
+        color: #664914;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+}
+.section-description {
+    font-size: 18px;
+    color: #51514D;
+    margin-bottom: 20px;
+}
+
+.btn-link {
+    font-size: 16px;
+    color: #00474B;
+    font-weight: normal;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.carousel-controls  {
+   z-index: 10;
+    
+}
+.carousel-controls button {
+    width: 56px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    
+}
+
+
+  
+  
+
+.discover-rooms-section{
+    z-index: 0;
+}
